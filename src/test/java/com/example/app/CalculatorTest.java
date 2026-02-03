@@ -1,7 +1,7 @@
 package com.example.app;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
 
 class CalculatorTest {
 
@@ -15,5 +15,11 @@ class CalculatorTest {
     void testMultiply() {
         Calculator calculator = new Calculator();
         assertEquals(6, calculator.multiply(2, 3));
+    }
+
+    @Test
+    void testAdd1(){
+        Calculator calculator = new Calculator();
+        assertEquals(10, calculator.add(7, 3));
     }
 }
